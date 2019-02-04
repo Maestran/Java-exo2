@@ -42,27 +42,14 @@ public class Java2Cours1{
             else if(value == 2)
             {
                 System.out.println("Lancement du programme de moyenne");
-                if(!yesOrNo())
-                {
-                    System.out.println("IMPLEMENTER LA METHODE DE SAISIE");
-                }
-                else
-                {
-                     moyenne a = new moyenne(args);
-                }
+                moyenne a = new moyenne(args);
+               
                
             }
             else if(value == 3)
             {
                 System.out.println("Lancement du programme de racine carré");
-                if(!yesOrNo())
-                {
-                    System.out.println("IMPLEMENTER LA METHODE DE SAISIE");
-                }
-                else
-                {
-                    UtiliseRacine b = new UtiliseRacine(args);
-                }
+                UtiliseRacine b = new UtiliseRacine(args);               
             }
             
         }while(value != 0);
@@ -70,29 +57,7 @@ public class Java2Cours1{
         System.out.println("Goodbye !");
         
     }
-    
-    /**
-     *
-     * @return 
-     */
-    
-    public static boolean yesOrNo()
-    {
-
-        Scanner scanner;
-        scanner = new Scanner(System.in);
-        String test = new String("");
-        do
-        {
-            System.out.println("Avez vous rentré vos valeurs à l'appel du programme en ligne de commande ?");
-            System.out.println("Y) OUI");
-            System.out.println("N) NON");
-            test = scanner.nextLine();
-        }while(test == "Y" || test == "N");
-        
-        return test == "Y";
-        
-    }
+ 
     public static void affichage()
     {
         Scanner scanner;
